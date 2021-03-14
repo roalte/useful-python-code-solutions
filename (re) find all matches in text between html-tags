@@ -1,0 +1,5 @@
+def get_matches(data, regex=r"<TAG>(.*?)<\/TAG>"): # replace TAG with real tagname
+    matches = None
+    pattern = re.compile(r"%s" % regex)
+    matches = re.findall(pattern, data)
+    return matches
