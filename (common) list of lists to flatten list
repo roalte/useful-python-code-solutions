@@ -1,2 +1,2 @@
 def flatten_lol(lol):
-    return [[s] for s in lol for s in s]
+    return [s for s in lol for s in s]
